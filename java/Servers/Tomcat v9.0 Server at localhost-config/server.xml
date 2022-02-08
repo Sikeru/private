@@ -154,11 +154,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-<<<<<<< HEAD
-      <Context docBase="pro05" path="/pro05" reloadable="true" source="org.eclipse.jst.jee.server:pro05"/><Context docBase="webShop" path="/webShop" reloadable="true" source="org.eclipse.jst.jee.server:webShop"/><Context docBase="pro055" path="/pro055" reloadable="true" source="org.eclipse.jst.jee.server:pro055"/><Context docBase="pro06" path="/pro06" reloadable="true" source="org.eclipse.jst.jee.server:pro06"/></Host>
-=======
-      <Context docBase="pro05" path="/pro05" reloadable="true" source="org.eclipse.jst.jee.server:pro05"/><Context docBase="webShop" path="/webShop" reloadable="true" source="org.eclipse.jst.jee.server:webShop"/><Context docBase="pro055" path="/pro055" reloadable="true" source="org.eclipse.jst.jee.server:pro055"/><Context docBase="pro6" path="/pro6" reloadable="true" source="org.eclipse.jst.jee.server:pro6"/></Host>
->>>>>>> 16e3b1d20f3bcb9130024a9220b545083e5db84a
+      <Context docBase="webShop" path="/webShop" reloadable="true" source="org.eclipse.jst.jee.server:webShop"/><Context docBase="pro055" path="/pro055" reloadable="true" source="org.eclipse.jst.jee.server:pro055"/><Context docBase="pro05" path="/pro05" reloadable="true" source="org.eclipse.jst.jee.server:pro05"/><Context docBase="pro06" path="/pro06" reloadable="true" source="org.eclipse.jst.jee.server:pro06"/><Context docBase="pro07" path="/pro07" reloadable="true" source="org.eclipse.jst.jee.server:pro07"/></Host>
     </Engine>
   </Service>
 </Server>
