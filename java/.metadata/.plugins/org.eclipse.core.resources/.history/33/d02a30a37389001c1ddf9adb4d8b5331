@@ -1,0 +1,9 @@
+package ex1;
+
+public class MemberVO {
+	private String id;
+	private String pwd;
+	private String name;
+	private String emil;
+	private String joinDate;
+}

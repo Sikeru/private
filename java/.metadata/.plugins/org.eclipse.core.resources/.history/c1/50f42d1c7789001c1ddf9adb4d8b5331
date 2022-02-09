@@ -1,0 +1,7 @@
+package ex1;
+
+public class MemberDAO {
+	private String con;
+	private String pstmt;
+	private String dataFactory;
+}

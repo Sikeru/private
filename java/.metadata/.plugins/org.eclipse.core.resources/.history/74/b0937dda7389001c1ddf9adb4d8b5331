@@ -1,0 +1,17 @@
+package ex1;
+
+import java.sql.Date;
+
+public class MemberVO {
+	private String id;
+	private String pwd;
+	private String name;
+	private String emil;
+	private Date joinDate;
+	
+	public MemberVO() {
+		System.out.println("MemberVO");
+	}
+	
+	
+}

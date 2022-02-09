@@ -1,0 +1,26 @@
+package ex1;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+public class MemberDAO {
+	private Connection con;
+	private PreparedStatement pstmt;
+	private DataSource dataFactory;
+	
+	public List listMembers() {
+		List list = new ArrayList();
+		try {
+			con=dataFactory.getConnection();
+			
+		}catch(Exception e){
+			e.getStackTrace();
+		}
+		
+		
+	}
+}
