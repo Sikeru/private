@@ -11431,3 +11431,9 @@ org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 2; 문서에서 루�
 	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-02-09 17:23:43.660
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-02-09 17:24:09.558
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
