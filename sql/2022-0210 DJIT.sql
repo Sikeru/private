@@ -98,6 +98,49 @@ WHERE PROD_NO IN (
         SELECT DISTINCT P.PROD_NO
         FROM PRODUCTS P, SALES S
         WHERE P.PROD_NO=S.PROD_NO);
+        
+--하나도 구매하지 않은 고객
+SELECT CU_NAME
+FROM CUSTOMER C, SALES S
+WHERE C.CUST_ID = S.CUST_ID(+)
+MINUS
+SELECT CU_NAME
+FROM CUSTOMER C, SALES S
+WHERE C.CUST_ID = S.CUST_ID;
 
+--구매금액이 5000만원 이상인 고객
+SELECT CU_NAME
+FROM CUSTOMER C, (SELECT CUST_ID, SUM(AMOUNT) TOT
+                                FROM SALES
+                                GROUP BY CUST_ID) TEMP
+WHERE TOT >= 5000000 AND C.CUST_ID = TEMP.CUST_ID;
+
+--가장 많이 팔린 제품 5개 리스트
+--ROWNUM : 오라클에서 제공하는 명령어
+--조회되는 순서를 앞에 붙여줌
+SELECT ROWNUM, PROD_NO, TOT
+FROM(SELECT PROD_NO, SUM(QUANTITY) TOT
+            FROM SALES
+            GROUP BY PROD_NO
+            ORDER BY SUM(QUANTITY) DESC)
+WHERE ROWNUM <= 5;
+
+--카드와 현금 각 총 판매 금액
+SELECT PAYMENT, SUM(AMOUNT)
+FROM SALES
+GROUP BY PAYMENT;
+
+--가장 많이 팔린 제품과 가장 적게 팔린 제품 조회
+SELECT P.PROD_NO, PROD_NAME
+FROM PRODUCTS P, (SELECT PROD_NO, SUM(QUANTITY) TOT
+            FROM SALES
+            GROUP BY PROD_NO) TEMP
+WHERE P.PROD_NO = TEMP.PROD_NO AND TOT = (SELECT MAX(TOT)
+                            FROM(SELECT PROD_NO, SUM(QUANTITY) TOT
+                            FROM SALES
+                            GROUP BY PROD_NO));
+                            
+--연령별 제품별 판패수량과 금액을 구하시오
+SELECT CUST_ID, CU_NAME, TO_CHAR(SYSDATE,'YYYY-MM-DD'), TO_CHAR(,'YYYY-MM-DD')
 
 
