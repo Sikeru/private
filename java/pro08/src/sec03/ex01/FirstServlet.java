@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import sun.security.util.DerValue;
 
-@WebServlet("/first")
+/*@WebServlet("/first")*/
 public class FirstServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
