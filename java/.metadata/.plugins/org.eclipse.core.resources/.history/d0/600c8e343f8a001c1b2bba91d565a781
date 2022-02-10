@@ -1,0 +1,30 @@
+package sec06.ex02;
+
+import java.io.IOException;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(name = "loadConfig", urlPatterns = { "/loadConfig" })
+public class LoadAppConfig extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+
+	public void init(ServletConfig config) throws ServletException {
+		System.out.println("LoadAppConfig의 init 메서드 호출");
+		context=config.getServletContext();
+		String menu_member=context.get
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+}
