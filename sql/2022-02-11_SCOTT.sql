@@ -26,3 +26,7 @@ COMMIT;
 DELETE FROM DEPT_EMP
 WHERE EMPNO>7500;
 ROLLBACK;
+
+select * from emp;
+UPDATE emp
+set sal = sal * 1.1;
