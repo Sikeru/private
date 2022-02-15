@@ -12,6 +12,11 @@
 	   이름:<input type="text" name="name"><br>
 	   <input type ="submit" value="조회하기">
    </form>
+   
+   <form method="post" action="member2.jsp">
+	   비밀번호:<input type="text" name="pwd"><br>
+	   <input type ="submit" value="조회하기">
+   </form>
 </body>
 </html>
 
