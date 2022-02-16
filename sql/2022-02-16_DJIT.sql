@@ -92,3 +92,10 @@ modify(tel unique);
 alter table emp_const
 modify(sal check(sal BETWEEN 1000 AND 9999));
 
+create user dsp identified by 12345;
+
+select * from hr.employees;
+update hr.employees
+set salary = salary *1.1;
+
+grant select, update on HR.employees to scott;
