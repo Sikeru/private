@@ -5,7 +5,7 @@
 <%
 	request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="m" class="sec01.ex01.MemberBean"/>
+<jsp:useBean id="m1" class="sec01.ex01.MemberBean"/>
 <jsp:setProperty name = "m1" property="*"/>
 <jsp:useBean id="membersList" class="java.util.ArrayList"/>
 <%
@@ -28,16 +28,16 @@
 			<td width="20%">이메일</td>
 		</tr>
 		<tr align="center">
-			<td><%=m.getId() %></td>
-			<td><%=m.getPwd() %></td>
-			<td><%=m.getName() %></td>
-			<td><%=m.getEmail() %></td>
+			<td>${membersList[0].id}</td>
+			<td>${membersList[0].pwd}</td>
+			<td>${membersList[0].name}</td>
+			<td>${membersList[0].email}</td>
 		</tr>
 		<tr align="center">
-			<td>${m.id}</td>
-			<td>${m.pwd}</td>
-			<td>${m.name}</td>
-			<td>${m.email}</td>
+			<td>${membersList[1].id}</td>
+			<td>${membersList[1].pwd}</td>
+			<td>${membersList[1].name}</td>
+			<td>${membersList[1].email}</td>
 		</tr>
 	</table>
 </body>
