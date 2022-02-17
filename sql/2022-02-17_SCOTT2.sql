@@ -17,4 +17,46 @@ is
 end;
 
 exec in_dept(60,'IT','DAEJEON');
+
+declare
+    type REC_DEPT IS RECORD(
+        deptno DEPT.DEPTNO%TYPE,
+        dname DEPT.DNAME%TYPE
+        );
+    
+    TYPE ITAB_DEPT IS TABLE OF REC_DEPT
+        INDEX BY PLS_INTEGER;
         
+    dept_arr ITAB_DEPT;
+    idx PLS_INTEGER := 0;
+    
+    BEGIN
+     FOR I IN (SELECT DEPTNO, DNAME FROM DEPT)LOOP
+     idx := idx +1;
+     dept_arr(idx).deptno := i.DEPTNO;
+     dept_arr(idx).dname := i.DNAME;
+     
+     DBMS_OUTPUT.PUT_LINE(
+        dept_arr(idx).deptno || ' : ' || dept_arr(idx).dname);
+    END LOOP;
+    END;
+    / 
+    
+DECLARE
+TYPE ITAB_EMP IS TABLE OF REC_EMP
+    INDEX BY PLS_INTEGER;
+    EMP_ERR ITAB_EMP;
+    IDX PLS_INTEGER;
+    SAL EMP.SAL%TYPE;
+
+BEGIN
+    FOR I IN (SELECT EMPNO, ENAME, SAL FROM EMP) LOOP
+        IDX := IDX+1;
+        EMP_ERR(IDX).EMPNO :=I.EMPNO;
+        EMP_ERR(IDX).ENAME :=I.ENAME;
+        EMP_ERR(IDX).SAL :=I.SAL;
+        DBMS_OUTPUT.PUT_LINE(EMP_ERR(IDX),EMPNO || ',' ||
+                            EMP_ERR(IDX),ENAME || ',' ||
+                            EMP_ERR(IDX),SAL);
+END LOOP;
+END;
