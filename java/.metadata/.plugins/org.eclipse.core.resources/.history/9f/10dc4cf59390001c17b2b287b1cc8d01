@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID 셀렉터 연습</title>
+
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script type="text/javascript">
+	function addHtml() {
+		
+	}
+</script>
+</head>
+<body>
+	<div>
+		<button onclick="addHtml">추가하기</button>
+	</div>
+</body>
+</html>
