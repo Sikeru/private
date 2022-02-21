@@ -1,0 +1,19 @@
+package sec01.ex01;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public class MemberDAO {
+	public List<MemberVO> listMembers(){
+		try {
+			conn = dataFactory.getConnection();
+			String query = "select * from t_member order by joinDate desc";
+			System.out.println(query);
+			pstmt=conn.prepareStatement(query);
+			ResultSet rs = pstmt.ex
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return membersList;
+	}
+}
