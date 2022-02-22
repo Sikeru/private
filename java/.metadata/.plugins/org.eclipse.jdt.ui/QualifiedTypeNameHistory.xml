@@ -27,7 +27,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="sec04.ex01.Loginlmpl"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.disk.DiskFileItemFactory"/>
 <fullyQualifiedTypeName name="org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory"/>
 <fullyQualifiedTypeName name="org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload"/>
@@ -52,6 +51,7 @@
 <fullyQualifiedTypeName name="java.io.Writer"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>
