@@ -104,7 +104,7 @@ public class MemberDAO {
 		String email = memberVO.getEmail();
 		try {
 			conn = dataFactory.getConnection();
-			String query = "update t_member set pwd=?,name=?,email=?  where id=?";
+			String query = "update t_member set pwd=?,name=?,email=? where id=?";
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, pwd);
