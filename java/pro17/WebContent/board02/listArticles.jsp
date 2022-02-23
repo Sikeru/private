@@ -32,7 +32,7 @@
     </tr>
   </c:when>
 <c:when test="${articlesList !=null }" >
-    <c:forEach  var="article" items="${articlesList }" varStatus="articleNum" >
+    <c:forEach  var="article" items="${articlesList}" varStatus="articleNum" >
      <tr align="center">
 	<td width="5%">${articleNum.count}</td>
 	<td width="10%">${article.id }</td>
@@ -57,5 +57,5 @@
      </c:when>
     </c:choose>
 </table>
-<a  class="cls1"  href="${contextPath}/board/articeForm.do"><p class="cls2">글쓰기</p></a> </body></html>
+<a  class="cls1"  href="${contextPath}/board/articleForm.do"><p class="cls2">글쓰기</p></a> </body></html>
   

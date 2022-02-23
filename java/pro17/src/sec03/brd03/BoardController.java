@@ -29,6 +29,7 @@ public class BoardController extends HttpServlet {
 
 	public void init(ServletConfig config) throws ServletException {
 		boardService = new BoardService();
+		articleVO = new ArticleVO();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -61,9 +62,9 @@ public class BoardController extends HttpServlet {
 			} else if (action.equals("/articleForm.do")) {
 				nextPage = "/board02/articleForm.jsp";
 			} else if (action.equals("/addArticle.do")) {
-				int articleNO = 0;
+				int articleNO=0;
 				Map<String, String> articleMap = upload(request, response);
-				String title = articleMap.get("content");
+				String title = articleMap.get("title");
 				String content = articleMap.get("content");
 				String imageFileName = articleMap.get("imageFileName");
 				articleVO.setParentNO(0);
@@ -71,23 +72,23 @@ public class BoardController extends HttpServlet {
 				articleVO.setTitle(title);
 				articleVO.setContent(content);
 				articleVO.setImageFileName(imageFileName);
-				articleNO = boardService.addArticle(articleVO);
-
-				if (imageFileName != null && imageFileName.length() != 0) {
-					File srcFile = new File(ARTICLE_IMAGE_REPO + "\\" + "temp" + "\\" + imageFileName);
-					File destDir = new File(ARTICLE_IMAGE_REPO + "\\" + articleNO);
-					destDir.mkdir();
-					FileUtils.moveFileToDirectory(srcFile, destDir, true);
+				articleNO=boardService.addArticle(articleVO);
+				
+				if(imageFileName!=null && imageFileName.length()!=0) {
+				    File srcFile = new File(ARTICLE_IMAGE_REPO +"\\"+"temp"+"\\"+imageFileName);
+				    File destDir = new File(ARTICLE_IMAGE_REPO +"\\"+articleNO);
+				    destDir.mkdirs();
+				    FileUtils.moveFileToDirectory(srcFile, destDir, true);
 				}
 				PrintWriter pw = response.getWriter();
-				pw.print("<script>" + "alert('새글을 추가했습니다.');" + "location.href='" + request.getContextPath()
-						+ "board/listArticles.do';" + "</script>");
+				pw.print("<script>" 
+				         +"  alert('새글을 추가했습니다.');" 
+						 +" location.href='"+request.getContextPath()+"/board/listArticles.do';"
+				         +"</script>");
 				return;
-			}else {
-				nextPage="/board02/listArticles.jsp";
+			} else {
+				nextPage = "/board02/listArticles.jsp";
 			}
-				boardService.addArticle(articleVO);
-				nextPage = "/board/listArticles.do";
 			RequestDispatcher dispatch = request.getRequestDispatcher(nextPage);
 			dispatch.forward(request, response);
 		} catch (Exception e) {
@@ -99,22 +100,22 @@ public class BoardController extends HttpServlet {
 			throws ServletException, IOException {
 		Map<String, String> articleMap = new HashMap<String, String>();
 		String encoding = "utf-8";
-		File currentDirPath = new File(ARTICLE_IMAGE_REPO);
+		File currentDirPath=new File(ARTICLE_IMAGE_REPO);
 		DiskFileItemFactory factory = new DiskFileItemFactory();
 		factory.setRepository(currentDirPath);
-		factory.setSizeThreshold(1024 * 1024);
+		factory.setSizeThreshold(1024*1024);
 		ServletFileUpload upload = new ServletFileUpload(factory);
-
+		
 		try {
 			List items = upload.parseRequest(request);
-			for (int i = 0; i < items.size(); i++) {
-				FileItem fileItem = (FileItem) items.get(i);
-				if (fileItem.isFormField()) {
-					System.out.println(fileItem.getFieldName() + "=" + fileItem.getString(encoding));
-					articleMap.put(fileItem.getFieldName(), fileItem.getName());
-				} else {
+			for(int i =0; i<items.size();i++) {
+				FileItem fileItem=(FileItem) items.get(i);
+				if(fileItem.isFormField()) {
+					System.out.println(fileItem.getFieldName()+"="+fileItem.getString(encoding));
+					articleMap.put(fileItem.getFieldName(), fileItem.getString(encoding));
+				}else {
 					System.out.println("파라미터명:" + fileItem.getFieldName());
-					// System.out.println("파일명:" + fileItem.getName());
+					//System.out.println("파일명:" + fileItem.getName());
 					System.out.println("파일크기:" + fileItem.getSize() + "bytes");
 
 					if (fileItem.getSize() > 0) {
@@ -123,15 +124,15 @@ public class BoardController extends HttpServlet {
 							idx = fileItem.getName().lastIndexOf("/");
 						}
 						String fileName = fileItem.getName().substring(idx + 1);
-						System.out.println("파일명 : " + fileName);
+						System.out.println("파일명 : "+fileName);
 						articleMap.put(fileItem.getFieldName(), fileName);
-
-						File uploadFile = new File(currentDirPath + "\\temp\\" + fileName);
+						
+						File uploadFile = new File(currentDirPath + "\\temp\\"+ fileName);
 						fileItem.write(uploadFile);
 					}
-				}
-			}
-		} catch (Exception e) {
+				} 
+			} 
+		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		return articleMap;

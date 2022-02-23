@@ -27,6 +27,7 @@ public class BoardController extends HttpServlet {
 
 	public void init(ServletConfig config) throws ServletException {
 		boardService = new BoardService();
+		articleVO = new ArticleVO();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -60,7 +61,7 @@ public class BoardController extends HttpServlet {
 				nextPage = "/board02/articleForm.jsp";
 			} else if (action.equals("/addArticle.do")) {
 				Map<String, String> articleMap = upload(request, response);
-				String title = articleMap.get("content");
+				String title = articleMap.get("title");
 				String content = articleMap.get("content");
 				String imageFileName = articleMap.get("imageFileName");
 				articleVO.setParentNO(0);
@@ -96,7 +97,7 @@ public class BoardController extends HttpServlet {
 				FileItem fileItem=(FileItem) items.get(i);
 				if(fileItem.isFormField()) {
 					System.out.println(fileItem.getFieldName()+"="+fileItem.getString(encoding));
-					articleMap.put(fileItem.getFieldName(), fileItem.getName());
+					articleMap.put(fileItem.getFieldName(), fileItem.getString(encoding));
 				}else {
 					System.out.println("파라미터명:" + fileItem.getFieldName());
 					//System.out.println("파일명:" + fileItem.getName());

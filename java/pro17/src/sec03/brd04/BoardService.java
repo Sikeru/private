@@ -19,9 +19,8 @@ public class BoardService {
 	
 	public ArticleVO viewArticle(int articleNO) {
 		ArticleVO article = null;
-		article = boardDAO.selectAllArticles(articleNO);
+		article = boardDAO.selectArticle(articleNO);
 		return article;
 	}
-	
-	
+
 }
