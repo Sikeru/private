@@ -10406,3 +10406,199 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:20:45.654
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:20:45.654
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:20:45.655
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:21:14.920
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:21:14.920
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:21:14.921
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:21:52.362
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:21:52.363
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:21:52.363
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:21:52.879
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:21:52.879
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 13:21:52.880
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+!SESSION 2022-02-23 13:44:53.065 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-02-23 13:45:00.877
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-02-23 13:45:00.877
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6e00d737,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@656c0eae,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-02-23 13:45:07.861
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\djit215'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 14:21:52.257
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 14:21:52.259
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 14:21:52.263
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-02-23 14:28:39.018
+!MESSAGE An internal error occurred during: "Requesting Java AST from selection".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.lookup.TypeSystem.getRawType(TypeSystem.java:376)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotatableTypeSystem.getRawType(AnnotatableTypeSystem.java:167)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotatableTypeSystem.getRawType(AnnotatableTypeSystem.java:180)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createRawType(LookupEnvironment.java:1428)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.convertToRawType(LookupEnvironment.java:877)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:3612)
+	at org.eclipse.jdt.core.dom.DefaultBindingResolver.resolveName(DefaultBindingResolver.java:1357)
+	at org.eclipse.jdt.core.dom.Name.resolveBinding(Name.java:88)
+	at org.eclipse.jdt.internal.core.manipulation.search.OccurrencesFinder.visit(OccurrencesFinder.java:181)
+	at org.eclipse.jdt.core.dom.SimpleName.accept0(SimpleName.java:198)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChild(ASTNode.java:3019)
+	at org.eclipse.jdt.core.dom.SimpleType.accept0(SimpleType.java:195)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChild(ASTNode.java:3019)
+	at org.eclipse.jdt.core.dom.ParameterizedType.accept0(ParameterizedType.java:164)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChild(ASTNode.java:3019)
+	at org.eclipse.jdt.core.dom.QualifiedType.accept0(QualifiedType.java:247)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChild(ASTNode.java:3019)
+	at org.eclipse.jdt.core.dom.VariableDeclarationStatement.accept0(VariableDeclarationStatement.java:253)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.Block.accept0(Block.java:128)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChild(ASTNode.java:3019)
+	at org.eclipse.jdt.core.dom.TryStatement.accept0(TryStatement.java:274)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.Block.accept0(Block.java:128)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChild(ASTNode.java:3019)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:698)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:447)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.internal.core.manipulation.search.OccurrencesFinder.performSearch(OccurrencesFinder.java:104)
+	at org.eclipse.jdt.internal.core.manipulation.search.OccurrencesFinder.getOccurrences(OccurrencesFinder.java:110)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.updateOccurrenceAnnotations(JavaEditor.java:3357)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor$6.selectionChanged(JavaEditor.java:3383)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:184)
+	at org.eclipse.jdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:160)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 14:58:56.360
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 14:58:56.361
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 14:59:07.311
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 14:59:07.312
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 14:59:07.312
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:11:17.509
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:11:17.510
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:11:17.511
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:11:19.173
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:11:19.174
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:11:19.175
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:57:19.723
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:57:19.724
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:57:19.725
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:58:49.042
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:58:49.043
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:59:01.800
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:59:01.800
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2022-02-23 15:59:01.800
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-02-23 16:00:15.587
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2022-02-23 16:00:42.881
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.

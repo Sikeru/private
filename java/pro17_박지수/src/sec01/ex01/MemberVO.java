@@ -10,9 +10,16 @@ public class MemberVO {
 	private Date joinDate;
 	
 	public MemberVO() {
-		System.out.println("생성자 호출");
+		System.out.println("MemberVO 생성자 호출");
 	}
 	
+	public MemberVO(String id, String pwd, String name, String email) {
+		this.id = id;
+		this.pwd = pwd;
+		this.name = name;
+		this.email = email;
+	}
+
 	public MemberVO(String id, String pwd, String name, String email, Date joinDate) {
 		this.id = id;
 		this.pwd = pwd;
@@ -20,8 +27,6 @@ public class MemberVO {
 		this.email = email;
 		this.joinDate = joinDate;
 	}
-
-
 
 	public String getId() {
 		return id;
@@ -62,4 +67,5 @@ public class MemberVO {
 	public void setJoinDate(Date joinDate) {
 		this.joinDate = joinDate;
 	}
+	
 }
