@@ -12,6 +12,16 @@ public class MemberVO {
 	public MemberVO() {
 		System.out.println("생성자 호출");
 	}
+	
+	public MemberVO(String id, String pwd, String name, String email, Date joinDate) {
+		this.id = id;
+		this.pwd = pwd;
+		this.name = name;
+		this.email = email;
+		this.joinDate = joinDate;
+	}
+
+
 
 	public String getId() {
 		return id;
