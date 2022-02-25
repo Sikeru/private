@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="7" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="418" y="-8">
+<window height="768" maximized="true" width="1024" x="-38" y="-18">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -31,11 +31,11 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.tomato.exerd.editor.DiagramEditor" name="SFR.exerd" partName="SFR.exerd" path="D:/exERD/newProject/SFR.exerd" title="SFR.exerd" tooltip="newProject/SFR.exerd" workbook="DefaultEditorWorkbook">
+<editor id="com.tomato.exerd.editor.DiagramEditor" name="SFR.exerd" partName="SFR.exerd" path="D:/exERD/newProject/SFR.exerd" title="SFR.exerd" tooltip="newProject/SFR.exerd" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/newProject/SFR.exerd"/>
 </editor>
-<editor id="com.tomato.exerd.editor.DiagramEditor" name="dbdbdb.exerd" partName="dbdbdb.exerd" title="dbdbdb.exerd" tooltip="D:\project_ex\착수자료\6. DB설계\exErd\dbdbdb.exerd" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/D:/project_ex/착수자료/6.%20DB설계/exErd/dbdbdb.exerd"/>
+<editor activePart="true" focus="true" id="com.tomato.exerd.editor.DiagramEditor" name="SFR2차.exerd" partName="SFR2차.exerd" path="D:/exERD/newProject/SFR2차.exerd" title="SFR2차.exerd" tooltip="newProject/SFR2차.exerd" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/newProject/SFR2차.exerd"/>
 </editor>
 </editors>
 <views>
@@ -48,7 +48,7 @@
 <element path="/newProject"/>
 </expanded>
 <selection>
-<element path="/newProject/SFR.exerd"/>
+<element path="/newProject/SFR2차.exerd"/>
 </selection>
 </viewState>
 </view>
@@ -171,19 +171,10 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" path="/newProject/SFR.exerd"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" uri="file:/D:/착수자료/6.%20DB설계/exErd/dbdbdb.exerd"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" uri="file:/D:/project_ex/착수자료/9.EXERD/OfCourse%20EXERD(수정).exerd"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" uri="file:/D:/project_ex/착수자료/6.%20DB설계/exErd/dbdbdb.exerd"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" path="/newProject/SFR.exerd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" path="/newProject/SFR2차.exerd"/>
 </editors>
 <item historyLabel="SFR.exerd" index="0"/>
-<item historyLabel="SFR.exerd" index="0"/>
-<item historyLabel="dbdbdb.exerd" index="1"/>
-<item historyLabel="SFR.exerd" index="0"/>
-<item historyLabel="OfCourse EXERD(수정).exerd" index="2"/>
-<item historyLabel="SFR.exerd" index="0"/>
-<item historyLabel="dbdbdb.exerd" index="3"/>
-<item active="true" historyLabel="SFR.exerd" index="4"/>
+<item active="true" historyLabel="SFR2차.exerd" index="1"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -201,6 +192,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="SFR2차.exerd" tooltip="newProject/SFR2차.exerd">
+<persistable path="/newProject/SFR2차.exerd"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="SFR.exerd" tooltip="newProject/SFR.exerd">
+<persistable path="/newProject/SFR.exerd"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="dbdbdb.exerd" tooltip="D:\project_ex\착수자료\6. DB설계\exErd\dbdbdb.exerd">
 <persistable uri="file:/D:/project_ex/착수자료/6.%20DB설계/exErd/dbdbdb.exerd"/>
 </file>
@@ -209,9 +206,6 @@
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="dbdbdb.exerd" tooltip="D:\착수자료\6. DB설계\exErd\dbdbdb.exerd">
 <persistable uri="file:/D:/착수자료/6.%20DB설계/exErd/dbdbdb.exerd"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="SFR.exerd" tooltip="newProject/SFR.exerd">
-<persistable path="/newProject/SFR.exerd"/>
 </file>
 </mruList>
 </workbench>

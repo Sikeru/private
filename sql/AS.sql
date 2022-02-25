@@ -97,14 +97,12 @@ SELECT * from operator;
 SELECT * from product;
 SELECT * from repair;
 
-select pno from product
-where pname='¼¼Å¹±â';
-
 select cu_name, cu_tel, addr, pname from customer c, asrequest q, product p
 where q.pno=(select pno from product
              where pname='¼¼Å¹±â')
 and c.cu_id=q.cu_id
 and p.pno=q.pno;
+
 
 
 commit;       
