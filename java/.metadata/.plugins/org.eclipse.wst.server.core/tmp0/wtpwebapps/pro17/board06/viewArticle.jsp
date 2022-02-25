@@ -103,7 +103,7 @@
 
 <body>
   <form name="frmArticle" method="post"  action="${contextPath}"  enctype="multipart/form-data">
-  <input type="hidden" name="parentNO" value="parentNO">
+  <!-- <input type="hidden" name="parentNO" value="parentNO"> -->
   <table  border="0"  align="center">
   <tr>
    <td width="150" align="center" bgcolor="#FF9933">
