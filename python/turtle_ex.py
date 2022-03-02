@@ -66,5 +66,3 @@ for i in range(1, 10000):
         #print(r, g, b)
 
 t.exitonclick()
-
-# while True:
