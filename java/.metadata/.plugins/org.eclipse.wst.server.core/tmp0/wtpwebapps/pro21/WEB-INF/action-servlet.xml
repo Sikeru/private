@@ -50,7 +50,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 		<property name="mappings">
 			<props>
 				<prop key="/test/login.do">login</prop>
-				<prop key="/test/memberInfo.do">memberInfo</prop> 
+ 				<prop key="/test/memberInfo.do">memberInfo</prop>
 			</props>
 		</property>
 	</bean>
