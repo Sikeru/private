@@ -1,0 +1,21 @@
+package com.spring.ex01;
+
+public class MemberVO {
+	private String id;
+	private String pwd;
+	private String name;
+	private String email;
+	private String joinDate;
+	
+	
+	
+	public MemberVO(String id, String pwd, String name, String email) {
+		super();
+		this.id = id;
+		this.pwd = pwd;
+		this.name = name;
+		this.email = email;
+	}
+	
+	
+}
