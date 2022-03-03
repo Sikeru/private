@@ -13,7 +13,7 @@ g=1
 b=1
 
 t.colormode(255)
-for i in range(1, 10000):
+for i in range(1, 1000):
     if g > 255:
         g = 255
 
