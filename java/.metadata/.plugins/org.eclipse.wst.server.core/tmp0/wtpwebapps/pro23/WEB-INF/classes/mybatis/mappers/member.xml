@@ -82,7 +82,7 @@
      
    <delete id="deleteMember"  parameterType="String">
 	<![CDATA[
-	   delete from t_member
+	   delete from  t_member
 	   where
 	   id=#{id}
 	]]>      
