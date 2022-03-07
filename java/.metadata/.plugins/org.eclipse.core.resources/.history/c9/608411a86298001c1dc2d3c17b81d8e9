@@ -1,8 +1,0 @@
-package com.spring.ex03;
-
-public interface MemberDAO {
-	public default void listMembers() {
-		System.out.println("listmembers 메서드 호출");
-		System.out.println("회원정보를 조회합니다.");
-	}
-}

@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Integer"/>
+		<item key="selection" value="delete"/>
 		<list key="findhistory">
+			<item value="delete"/>
 			<item value="Integer"/>
 			<item value="board04"/>
 			<item value="파일"/>

@@ -105,14 +105,14 @@
       order by joinDate desc
   </select>
   
- <!--  
+
    <sql id="a">
     <![CDATA[
       select * from t_member
      ]]> 
-   </sql>  -->  
+   </sql>
   
-<!--    
+
   <select id="searchMember" parameterType="memberVO" resultMap="memResult">
 	     <include refid="a" /> 
 	   <![CDATA[
@@ -133,10 +133,10 @@
 	      </choose>
        </where>
        order by joinDate desc
-   </select> -->
+   </select>
    
    <select id="foreachSelect" resultMap="memResult" parameterType="java.util.Map">
-      <!-- <include refid="a" /> -->
+      <include refid="a" />
       <![CDATA[
         select * from t_member 
           
