@@ -1,0 +1,22 @@
+package com.spring.ex02;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller("loginController")
+@RequestMapping("/test")
+
+public class LogingController {
+	@RequestMapping(value="/login.do", method = RequestMethod.GET)
+	public void login(HttpServletRequest request, HttpServletResponse response) throws Exception{
+		LogingVO loginVO = new LogingVO();
+				
+		request.getAttribute("id");
+		request.getAttribute("name");
+	}
+}
