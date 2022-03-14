@@ -5,7 +5,26 @@ class Student:
         self.mat = mat
         self.eng = eng
         self.sci = sci
-
+    def get_sum(self):
+        return self.kor + self.mat + self.eng + self.sci
+    def get_avatage(self):
+        return self.get_sum()/4
+    def __str__(self):
+        return "{}\t{}\t{}".format(self.name,
+                                   self.get_sum(),
+                                   self.get_avatage())
+    def __eq__(self, value):
+        return self.get_sum() == value.get_sum()
+    def __ne__(self, value):
+        return self.get_sum() != value.get_sum()
+    def __gt__(self, value):
+        return self.get_sum() > value.get_sum()
+    def __ge__(self, value):
+        return self.get_sum() >= value.get_sum()
+    def __lt__(self, value):
+        return self.get_sum() < value.get_sum()
+    def __le__(self, value):
+        return self.get_sum() <= value.get_sum()
 students = [
     Student("윤인성", 87, 98, 88, 95),
     Student("연하진", 92, 98, 96, 98),
@@ -23,3 +42,8 @@ for student in students:
     print(students[cnt].sci, end='    ')
     print()
     cnt+=1
+
+st_a = Student("윤인성", 87, 98, 88, 95)
+st_b = Student("나선주", 98, 92, 96, 92)
+
+print(st_a >= st_b)
