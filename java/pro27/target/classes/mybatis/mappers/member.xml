@@ -87,7 +87,14 @@
 	   id=#{id}
 	]]>      
   </delete>
-	
+  
+  <!-- ID와 비밀번호로 회원 정보를 조회하는 SQL문 -->
+	<select id="loginById" resultType="memberVO" parameterType="memberVO">
+		<![CDATA[
+			select * from t_member
+			where id = #{id} and pwd = #{pwd}
+		]]>
+	</select>
 	
 	<!-- 동적 SQL문 -->
   <select id="searchMember" parameterType="memberVO" resultMap="memResult">

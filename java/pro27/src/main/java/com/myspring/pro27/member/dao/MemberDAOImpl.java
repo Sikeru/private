@@ -33,4 +33,10 @@ public class MemberDAOImpl implements MemberDAO {
 		int result =  sqlSession.delete("mapper.member.deleteMember", id);
 		return result;
 	}
+	
+	@Override
+	public MemberVO loginById(MemberVO memberVO) throws DataAccessException{
+		MemberVO vo = sqlSession.selectOne("mapper.member.loginById", memberVO);
+		return vo;
+	}
 }
