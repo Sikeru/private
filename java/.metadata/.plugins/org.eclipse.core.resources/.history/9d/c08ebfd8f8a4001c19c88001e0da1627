@@ -1,0 +1,23 @@
+package com.myspring.pro29.ex01;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/test/*")
+public class TestController {
+	@RequestMapping("/hello")
+	public String hello() {
+		return "Hello REST!!";
+	}
+	
+	@RequestMapping("/member")
+	public MemberVO member() {
+		MemberVO vo = new MemberVO();
+		vo.setId("hong");
+		vo.setPwd("1234");
+		vo.setName("ȫ�浿");
+		vo.setEmail("hong@test.com");
+		return vo;
+	}
+}
