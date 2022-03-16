@@ -1,0 +1,5 @@
+package com.myspring.pro27.member.interceptor;
+
+public class ViewNameInterceptor {
+
+}

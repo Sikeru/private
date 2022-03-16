@@ -1,0 +1,5 @@
+package com.myspring.pro28.ex05;
+
+public class LocaleInterceptor {
+
+}
