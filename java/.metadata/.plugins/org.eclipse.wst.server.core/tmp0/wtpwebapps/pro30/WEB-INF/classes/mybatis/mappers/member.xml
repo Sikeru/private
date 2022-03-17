@@ -11,6 +11,7 @@
         <result property="email" column="email" />
         <result property="joinDate" column="joinDate" />
 	</resultMap> 
+	
 	<!-- 
 	<resultMap id="memResult" type="java.util.HashMap">
       <result property="id" column="id" />

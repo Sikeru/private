@@ -3,8 +3,8 @@
       PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="mapper.member">
-	<resultMap id="memResult" type="memberVO">
+<mapper namespace="mapper.board">
+	<resultMap id="articlesResult" type="articleVO">
 		<result property="level" column="level" />
         <result property="articleNO" column="articleNO" />
         <result property="parentNO" column="parentNO" />
@@ -14,10 +14,7 @@
         <result property="imageFileName" column="imageFileName" />
 	</resultMap> 
 	
-	
-
-
-	<select id="selectAllMemberList" resultMap="memResult">
+	<select id="selectAllArticlesList" resultMap="articlesResult">
 		<![CDATA[
 			SELECT level, articleNO, parentNO, title, content, writeDate, imageFileName, id
 			from t_board

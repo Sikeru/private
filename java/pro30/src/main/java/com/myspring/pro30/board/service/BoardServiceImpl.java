@@ -12,9 +12,9 @@ import com.myspring.pro30.board.vo.ArticleVO;
 
 @Service("boardService")
 @Transactional(propagation = Propagation.REQUIRED)
-public class BoardServiceImpl {
+public class BoardServiceImpl implements BoardService {
 	@Autowired
-	BoardDAO boardDAO;
+	private BoardDAO boardDAO;
 	
 	public List<ArticleVO> listArticles() throws Exception{
 		List<ArticleVO> artclesList = boardDAO.selectAllArticlesList();

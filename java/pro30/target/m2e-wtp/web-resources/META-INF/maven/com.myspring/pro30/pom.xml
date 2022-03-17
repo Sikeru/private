@@ -9,7 +9,7 @@
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
 		<java-version>1.6</java-version>
-		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
+		<org.springframework-version>4.1.1.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
@@ -152,6 +152,26 @@
 		<artifactId>tiles-servlet</artifactId>
 		<version>2.2.2</version>
 	</dependency>
+	
+	<dependency>
+		<groupId>jdbc.oracle</groupId>
+		<artifactId>OracleDriver</artifactId>
+		<version>12.1.0.2.0</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/ojdbc6.jar</systemPath>
+	</dependency>
+	
+	<!-- 파일업로드 관련 -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+		</dependency>
 	
 		<!-- Test -->
 		<dependency>

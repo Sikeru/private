@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"     isELIgnored="false" %>
+    pageEncoding="UTF-8" isELIgnored="false" %>
 
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
 <%    request.setCharacterEncoding("UTF-8");  %>  
 <!DOCTYPE html>
@@ -24,7 +25,7 @@
      <td >작성일</td>
   </tr>
 <c:choose>
-  <c:when test="${empty articlesList}" >
+  <c:when test="${articlesList==null}" >
     <tr  height="10">
       <td colspan="4">
          <p align="center">
