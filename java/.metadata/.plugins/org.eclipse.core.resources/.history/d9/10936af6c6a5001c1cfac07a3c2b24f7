@@ -1,0 +1,12 @@
+package board.service;
+
+import java.util.List;
+
+public class BoardService {
+
+	public List listAricles() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

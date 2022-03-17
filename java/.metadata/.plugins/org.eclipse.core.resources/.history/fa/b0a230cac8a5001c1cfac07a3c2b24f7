@@ -1,0 +1,15 @@
+package com.myspring.pro30.board.dao;
+
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+
+import com.myspring.pro30.board.vo.ArticleVO;
+
+public interface BoardDAO {
+
+	public List<ArticleVO> SelectAllArticlesList();
+
+	List selectAllArticlesList() throws DataAccessException;
+	
+}

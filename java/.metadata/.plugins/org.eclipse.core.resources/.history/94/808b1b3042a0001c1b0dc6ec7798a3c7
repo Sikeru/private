@@ -1,8 +1,0 @@
-package com.spring.ex02;
-
-public class LogingVO {
-	String Id;
-	String Name;
-	
-	
-}

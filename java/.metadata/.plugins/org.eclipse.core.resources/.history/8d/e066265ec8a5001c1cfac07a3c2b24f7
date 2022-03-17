@@ -1,0 +1,14 @@
+package com.myspring.pro30.board.dao;
+
+import java.util.List;
+
+import com.myspring.pro30.board.vo.ArticleVO;
+
+public interface BoardDAO {
+
+	public List<ArticleVO> SelectAllArticlesList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

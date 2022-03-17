@@ -40,11 +40,11 @@ http://www.springframework.org/schema/context  http://www.springframework.org/sc
 </beans:bean>
 
 <mvc:interceptors>
-		<mvc:interceptor>
-			<mvc:mapping path="/*/*.do"/>
-			<beans:bean class="com.myspring.pro27.member.interceptor.ViewNameInterceptor"/>
-		</mvc:interceptor>
-	</mvc:interceptors>
+	<mvc:interceptor>
+		<mvc:mapping path="/*/*.do"/>
+		<beans:bean class="com.myspring.pro27.member.interceptor.ViewNameInterceptor"/>
+	</mvc:interceptor>
+</mvc:interceptors>
 
  <context:component-scan base-package="com.myspring.pro27" />
  
