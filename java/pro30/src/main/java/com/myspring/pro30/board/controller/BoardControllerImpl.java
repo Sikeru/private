@@ -84,7 +84,7 @@ public class BoardControllerImpl implements BoardController {
 
 			message = "<script>";
 			message += "alert('새글을 추가했습니다.');";
-			message += "location.href='" + multipartRequest.getContextPath() + "/board/listAricles.do';";
+			message += "location.href='" + multipartRequest.getContextPath() + "/board/listArticles.do';";
 			message += "</script>";
 			resEnt = new ResponseEntity(message, responseHeaders, HttpStatus.CREATED);
 		} catch (Exception e) {
