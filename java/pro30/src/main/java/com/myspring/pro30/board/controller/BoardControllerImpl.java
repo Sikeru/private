@@ -3,6 +3,7 @@ package com.myspring.pro30.board.controller;
 import java.io.File;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -19,6 +20,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -101,7 +103,32 @@ public class BoardControllerImpl implements BoardController {
 
 	@RequestMapping(value = "/board/*Form.do", method = RequestMethod.GET)
 	private ModelAndView form(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		String viewName = (String)request.getAttribute("viewName");
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName(viewName);
+		return mav;
+	}
+	
+	//이미지 업로드
+	private String upload(MultipartHttpServletRequest multipRequest) throws Exception{
+		String imageFileName = null;
+		Iterator<String> fileNames=multipRequest.getFileNames();
 		
+		while(fileNames.hasNext()) {
+			String fileName = fileNames.next();
+			MultipartFile mFile = multipRequest.getFile(fileName);
+			imageFileName=mFile.getOriginalFilename();
+			File file = new File(ARTICLE_IMAGE_REPO+"\\"+fileName);
+			if(mFile.getSize()!=0) {
+				if(!file.exists()) {
+					if(file.getParentFile().mkdirs()) {
+						file.createNewFile();
+					}
+				}
+				mFile.transferTo(new File(ARTICLE_IMAGE_REPO+"\\"+"temp"+"\\"+imageFileName));
+			}
+		}
+		return imageFileName;
 	}
 
 }

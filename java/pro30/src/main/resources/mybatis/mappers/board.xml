@@ -28,13 +28,13 @@
 	<insert id="insertNewArticle" parameterType="java.util.Map">
 		<![CDATA[
 			INSERT into t_board(articleNO, title, content, imageFileName, id)
-			VALUES(#articleNO, #{title}, #{content}, #{imageFileName}, #{id})
+			VALUES(#{articleNO}, #{title}, #{content}, #{imageFileName}, #{id})
 		]]>
 	</insert>
 	
 	<select id="selectNewArticleNO" resultType="int">
 		<![CDATA[
-			SELECT nvl(max(artcleNO), 0) + 1 from t_board
+			SELECT max(articleNO) + 1 from t_board
 		]]>
 	</select>
 </mapper>
