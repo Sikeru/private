@@ -1,0 +1,15 @@
+127.0.0.1 - - [21/Mar/2022:13:58:34 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [21/Mar/2022:14:04:12 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [21/Mar/2022:14:04:27 +0900] "GET /pro30/main.do HTTP/1.1" 200 2941
+127.0.0.1 - - [21/Mar/2022:14:04:27 +0900] "GET /pro30/resources/image/duke_swing.gif HTTP/1.1" 304 -
+127.0.0.1 - - [21/Mar/2022:14:04:27 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+127.0.0.1 - - [21/Mar/2022:14:04:28 +0900] "GET /pro30/board/listArticles.do HTTP/1.1" 200 10922
+127.0.0.1 - - [21/Mar/2022:14:04:31 +0900] "GET /pro30/board/viewArticle.do?articleNO=14 HTTP/1.1" 200 8320
+127.0.0.1 - - [21/Mar/2022:14:04:31 +0900] "GET /pro30/download.do?articleNO=14&imageFileName=image1.jpg HTTP/1.1" 404 721
+127.0.0.1 - - [21/Mar/2022:14:04:43 +0900] "POST /pro30/board/removeArticle.do HTTP/1.1" 404 721
+127.0.0.1 - - [21/Mar/2022:14:04:46 +0900] "GET /pro30/board/viewArticle.do?articleNO=13 HTTP/1.1" 200 8332
+127.0.0.1 - - [21/Mar/2022:14:04:46 +0900] "GET /pro30/download.do?articleNO=13&imageFileName=image1.jpg HTTP/1.1" 404 721
+127.0.0.1 - - [21/Mar/2022:14:08:23 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [21/Mar/2022:14:08:30 +0900] "GET /pro30/board/listArticles.do HTTP/1.1" 200 10922
+127.0.0.1 - - [21/Mar/2022:14:08:31 +0900] "GET /pro30/board/viewArticle.do?articleNO=13 HTTP/1.1" 200 8332
+127.0.0.1 - - [21/Mar/2022:14:08:31 +0900] "GET /pro30/download.do?articleNO=13&imageFileName=image1.jpg HTTP/1.1" 404 721
