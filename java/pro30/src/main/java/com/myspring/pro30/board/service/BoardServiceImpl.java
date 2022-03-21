@@ -19,10 +19,10 @@ public class BoardServiceImpl implements BoardService {
 	@Autowired
 	private BoardDAO boardDAO;
 	
-	public List<ArticleVO> listArticles() throws Exception{
-		List<ArticleVO> artclesList = boardDAO.selectAllArticlesList();
-		return artclesList;
-	}
+//	public List<ArticleVO> listArticles() throws Exception{
+//		List<ArticleVO> artclesList = boardDAO.selectAllArticlesList();
+//		return artclesList;
+//	}
 	
 	//이미지가 하나일때 추가
 	@Override
@@ -35,4 +35,15 @@ public class BoardServiceImpl implements BoardService {
 		ArticleVO articleVO = boardDAO.selectArticle(articleNO);
 		return articleVO;
 	}
+
+	public Map listArticles(Map  pagingMap) throws Exception{
+		Map articlesMap = new HashMap();
+		List<ArticleVO> articlesList = boardDAO.selectAllArticlesList(pagingMap);
+		int totArticles = boardDAO.selectTotArticles();
+		articlesMap.put("articlesList", articlesList);
+		//articlesMap.put("totArticles", totArticles);
+		articlesMap.put("totArticles", 170);
+        return articlesMap;
+	}
+
 }

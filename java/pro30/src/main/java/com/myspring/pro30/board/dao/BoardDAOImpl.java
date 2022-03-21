@@ -15,11 +15,11 @@ public class BoardDAOImpl implements BoardDAO {
 	@Autowired
 	private SqlSession sqlSession;
 
-	@Override
-	public List selectAllArticlesList() throws DataAccessException {
-		List<ArticleVO> articlesList = articlesList = sqlSession.selectList("mapper.board.selectAllArticlesList");
-		return articlesList;
-	}
+//	@Override
+//	public List selectAllArticlesList() throws DataAccessException {
+//		List<ArticleVO> articlesList = articlesList = sqlSession.selectList("mapper.board.selectAllArticlesList");
+//		return articlesList;
+//	}
 	
 	@Override
 	public int insertNewArticle(Map articleMap) throws DataAccessException{
@@ -37,4 +37,17 @@ public class BoardDAOImpl implements BoardDAO {
 	public ArticleVO selectArticle(int articleNO) throws DataAccessException {
 		return sqlSession.selectOne("mapper.board.selectArticle", articleNO);
 	}
+
+	@Override
+	public List<ArticleVO> selectAllArticlesList(Map pagingMap) throws DataAccessException {
+		List<ArticleVO> articesList = sqlSession.selectList("mapper.board.selectAllArticlesList", pagingMap);
+		return articesList;
+	}
+
+	@Override
+	public int selectTotArticles() throws DataAccessException {
+		int totArticles = sqlSession.selectOne("mapper.board.selectTotArticles");
+		return totArticles;
+	}
+	
 }

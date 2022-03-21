@@ -8,8 +8,9 @@ import org.springframework.dao.DataAccessException;
 import com.myspring.pro30.board.vo.ArticleVO;
 
 public interface BoardDAO {
-	public List selectAllArticlesList() throws Exception;
 	public int insertNewArticle(Map articleMap) throws DataAccessException;
 	public ArticleVO selectArticle(int articleNO);
+	public List selectAllArticlesList(Map pagingMap) throws DataAccessException;
+	public int selectTotArticles() throws DataAccessException;
 	
 }

@@ -14,7 +14,7 @@
         <result property="imageFileName" column="imageFileName" />
 	</resultMap> 
 	
-	<select id="selectAllArticlesList" resultMap="articlesResult">
+	<!-- <select id="selectAllArticlesList" resultMap="articlesResult">
 		<![CDATA[
 			SELECT level, articleNO, parentNO, title, content, writeDate, imageFileName, id
 			from t_board
@@ -22,7 +22,7 @@
 			CONNECT BY PRIOR articleNO=parentNO
 			ORDER SIBLINGS BY articleNO DESC
 		]]>
-	</select>
+	</select> -->
 	
 	<!-- 단일이미지 추가 -->
 	<insert id="insertNewArticle" parameterType="java.util.Map">
@@ -43,6 +43,39 @@
 		<![CDATA[
 			SELECT * from t_board
 			where articleNO = #{articleNO}
+		]]>
+	</select>
+	
+	<!-- 페이징 -->
+	<select id="selectAllArticlesList" parameterType="java.util.Map" resultMap="articlesResult">
+		<![CDATA[
+      SELECT * FROM (
+				select ROWNUM  as recNum,
+                                    lvl,
+                                    articleNO,
+                                    parentNO,
+                                    title,
+                                    id,
+                                    writeDate
+		                            from (select LEVEL as LVL, 
+															articleNO,
+															parentNO,
+															title,
+															id,
+															writeDate
+														   from t_board
+														   START WITH  parentNO=0
+														   CONNECT BY PRIOR articleNO = parentNO
+														   ORDER SIBLINGS BY articleNO DESC)
+					)                         
+					where recNum between(#{section}-1)*100+(#{pageNum}-1)*10+1 and (#{section}-1)*100+#{pageNum}*10                          
+                    
+    ]]>
+	</select>
+	
+	<select id="selectTotArticles" resultType="int">
+		<![CDATA[
+			select count(articleNO) from t_board
 		]]>
 	</select>
 </mapper>

@@ -6,7 +6,7 @@ import java.util.Map;
 import com.myspring.pro30.board.vo.ArticleVO;
 
 public interface BoardService {
-	public List<ArticleVO> listArticles() throws Exception;
-	public int addNewArticle(Map<String, Object> articleMap);
+	public int addNewArticle(Map articleMap);
 	public ArticleVO viewArticle(int articleNO) throws Exception;
+	public Map listArticles(Map pagingMap) throws Exception;
 }

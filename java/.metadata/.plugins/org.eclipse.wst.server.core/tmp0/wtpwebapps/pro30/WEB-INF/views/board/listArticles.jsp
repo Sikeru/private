@@ -3,7 +3,12 @@
 
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
+<c:set var="contextPath"  value="${pageContext.request.contextPath}"  />
+<c:set var="articlesList"  value="${articlesMap.articlesList}"  />
+<c:set var="section"  value="${articlesMap.section}"  />
+<c:set var="pageNum"  value="${articlesMap.pageNum}"  />
+<c:set var="totArticles"  value="${articlesMap.totArticles}"  />
 
 <%    request.setCharacterEncoding("UTF-8");  %>  
 <!DOCTYPE html>
@@ -27,6 +32,7 @@
 	}
 </script>
 <body>
+
 <table align="center" border="1"  width="80%"  >
   <tr height="10" align="center"  bgcolor="lightgreen">
      <td >글번호</td>
@@ -44,18 +50,18 @@
       </td>  
     </tr>
   </c:when>
-
-  <c:when test="${articlesList != null}" >
+     
+     <c:when test="${not empty articlesList }" >
     <c:forEach  var="article" items="${articlesList }" varStatus="articleNum" >
      <tr align="center">
 	<td width="5%">${articleNum.count}</td>
 	<td width="10%">${article.id }</td>
 	<td align='left'  width="35%">
-	    <span style="padding-right:30px"></span>    
+	  <span style="padding-right:30px"></span>
 	   <c:choose>
 	      <c:when test='${article.level > 1 }'>  
 	         <c:forEach begin="1" end="${article.level }" step="1">
-	             <span style="padding-left:10px"></span> 
+	              <span style="padding-left:10px"></span>    
 	         </c:forEach>
 	         <span style="font-size:12px;">[답변]</span>
                    <a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
@@ -65,7 +71,7 @@
 	          </c:otherwise>
 	        </c:choose>
 	  </td>
-	  <td  width="10%"><fmt:formatDate value="${article.writeDate}" /></td> 
+	  <td  width="10%">${article.writeDate}</td> 
 	</tr>
     </c:forEach>
      </c:when>
