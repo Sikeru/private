@@ -41,8 +41,8 @@ public class BoardServiceImpl implements BoardService {
 		List<ArticleVO> articlesList = boardDAO.selectAllArticlesList(pagingMap);
 		int totArticles = boardDAO.selectTotArticles();
 		articlesMap.put("articlesList", articlesList);
-		//articlesMap.put("totArticles", totArticles);
-		articlesMap.put("totArticles", 170);
+		articlesMap.put("totArticles", totArticles);
+		//articlesMap.put("totArticles", 170);
         return articlesMap;
 	}
 
