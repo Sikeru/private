@@ -1,0 +1,10 @@
+package com.myspring.pro30.board.vo;
+
+public class ImageVO {
+
+	public void setImageFileName(String fileName) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

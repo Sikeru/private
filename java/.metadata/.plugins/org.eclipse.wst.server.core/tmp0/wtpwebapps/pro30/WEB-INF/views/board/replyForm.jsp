@@ -17,21 +17,34 @@
 	 obj.submit();
   }
  
-  function readURL(input) {
+  function readURL(input, index) {
       if (input.files && input.files[0]) {
           var reader = new FileReader();
           reader.onload = function (e) {
-              $('#preview').attr('src', e.target.result);
+              $('#preview'+index).attr('src', e.target.result);
           }
           reader.readAsDataURL(input.files[0]);
       }
-  }  
+  }
+  
+  var cnt = 1;
+  function fn_addFile() {
+	cnt++;
+	var innerHtml="";
+	innerHtml += '<tr width = 100% align = center>';
+	innerHtml +='<td >'+
+		"<input  type=file  name='file" + cnt + "'  onchange='readURL(this,"+ cnt + ")'   />"+'</td>';
+	innerHtml +='<td>'+"<img  id='preview" + cnt + "'' width=640 height=480/>"+'</td>';
+	innerHtml +='</tr>';
+	$("#tb_newlmage").append(innerHtml);
+
+}
 </script> 
 <title>답글쓰기 페이지</title>
 </head>
 <body>
  <h1 style="text-align:center">답글쓰기</h1>
-  <form name="frmReply" method="post"  action="${contextPath}/board/addReply.do"   enctype="multipart/form-data">
+  <form name="frmReply" method="post" action="${contextPath}/board/addNewAricle.do"   enctype="multipart/form-data">
     <table align="center">
     <tr>
 			<td align="right"> 글쓴이:&nbsp; </td>
@@ -51,7 +64,8 @@
             <td><img  id="preview" src="#"   width=200 height=200/></td>
 		</tr>
 		<tr>
-			<td align="right"> </td>
+			<td align="right">이미지 파일첨부 </td>
+			<td align="left"  colspan="2" > <input type="button" value="새 이미지 파일 추가하기" onClick="fn_addFile()"/></td>
 			<td>
 				<input type=submit value="답글반영하기" />
 				<input type=button value="취소"onClick="backToList(this.form)" />

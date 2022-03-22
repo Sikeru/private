@@ -81,18 +81,23 @@
 	     form.submit();
 	 }
 	 
-	 function fn_reply_form(url, parentNO){
-	     var form = document.createElement("form");
-	     form.setAttribute("method", "post");
-	     form.setAttribute("action", url);
-	     var parentNOInput = document.createElement("input");
-	     parentNOInput.setAttribute("type","hidden");
-	     parentNOInput.setAttribute("name","parentNO");
-	     parentNOInput.setAttribute("value", parentNO);
-		 
-	     form.appendChild(parentNOInput);
-	     document.body.appendChild(form);
-		 form.submit();
+	 function fn_reply_form(isLogOn, url, parentNO){
+	     if(isLogOn != '' && isLogOn != 'false'){
+	    	 var form = document.createElement("form");
+		     form.setAttribute("method", "post");
+		     form.setAttribute("action", url);
+		     var parentNOInput = document.createElement("input");
+		     parentNOInput.setAttribute("type","hidden");
+		     parentNOInput.setAttribute("name","parentNO");
+		     parentNOInput.setAttribute("value", parentNO);
+			 
+		     form.appendChild(parentNOInput);
+		     document.body.appendChild(form);
+			 form.submit();
+	     }else{
+	    	 alert("로그인 후 글쓰기가 가능합니다.")
+	    	 location.href = "${contextPath}/member/loginForm.do?action=/board/replyForm.do&parentNO="+parentNO;
+	     }
 	 }
 
 	 
@@ -181,7 +186,7 @@
     </c:if>
     <input type=button value="삭제하기" onClick="fn_remove_article('${contextPath}/board/removeArticle.do', ${article.articleNO})">
     <input type=button value="리스트로 돌아가기"  onClick="backToList(this.form)">
-    <input type=button value="답글쓰기"  onClick="fn_reply_form('${contextPath}/board/replyForm.do', ${article.articleNO})">
+    <input type=button value="답글쓰기"  onClick="fn_reply_form('${isLogOn}', '${contextPath}/board/replyForm.do', ${article.articleNO})">
 
    </td>
 </tr>  

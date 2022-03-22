@@ -75,11 +75,15 @@ public class MemberControllerImpl implements MemberController {
 
 	@RequestMapping(value = "/member/*Form.do", method = { RequestMethod.GET, RequestMethod.POST })
 	public ModelAndView form(@RequestParam(value = "result", required = false) String result,
-			@RequestParam(value = "action", required = false) String action, HttpServletRequest request,
+			@RequestParam(value = "action", required = false) String action,
+			@RequestParam(value = "parentNO", required = false) String parentNO, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		String viewName = (String) request.getAttribute("viewName");
 		HttpSession session = request.getSession();
 		session.setAttribute("action", action);
+		if(parentNO != null) {
+			session.setAttribute("parentNO", parentNO);
+		}
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("result", result);
 		mav.setViewName(viewName);
@@ -96,12 +100,12 @@ public class MemberControllerImpl implements MemberController {
 			HttpSession session = request.getSession();
 			session.setAttribute("member", memberVO);
 			session.setAttribute("isLogOn", true);
-			//mav.setViewName("redirect:/member/listMembers.do");
-			String action = (String)session.getAttribute("action");
+			// mav.setViewName("redirect:/member/listMembers.do");
+			String action = (String) session.getAttribute("action");
 			session.removeAttribute("action");
-			if(action != null) {
-				mav.setViewName("redirect:"+action);
-			}else {
+			if (action != null) {
+				mav.setViewName("redirect:" + action);
+			} else {
 				mav.setViewName("redirect:/member/listMembers.do");
 			}
 		} else {
