@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="7" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="-38" y="-18">
+<window height="768" width="1024" x="-1458" y="-6">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -26,21 +26,14 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.tomato.exerd.editor.DiagramEditor" name="SFR.exerd" partName="SFR.exerd" path="D:/exERD/newProject/SFR.exerd" title="SFR.exerd" tooltip="newProject/SFR.exerd" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/newProject/SFR.exerd"/>
-</editor>
-<editor activePart="true" focus="true" id="com.tomato.exerd.editor.DiagramEditor" name="SFR2차.exerd" partName="SFR2차.exerd" path="D:/exERD/newProject/SFR2차.exerd" title="SFR2차.exerd" tooltip="newProject/SFR2차.exerd" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/newProject/SFR2차.exerd"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ResourceNavigator" partName="네비게이터">
-<viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
+<viewState LINK_NAVIGATOR_TO_EDITOR="1" sorter="1">
 <filters>
 <filter element=".*" isEnabled="false"/>
 </filters>
@@ -48,14 +41,16 @@
 <element path="/newProject"/>
 </expanded>
 <selection>
-<element path="/newProject/SFR2차.exerd"/>
+<element path="/newProject"/>
 </selection>
 </viewState>
 </view>
 <view id="com.tomato.exerd.ui.views.thumbnail" partName="썸네일">
 <viewState/>
 </view>
-<view id="com.tomato.exerd.validate.ui.ValidateView" partName="검토"/>
+<view id="com.tomato.exerd.validate.ui.ValidateView" partName="검토">
+<viewState/>
+</view>
 <view id="com.tomato.exerd.modelview3.ModelView3" partName="모델">
 <viewState/>
 </view>
@@ -143,7 +138,7 @@
 </folder>
 </info>
 <info folder="true" part="bottomFolder" ratio="0.7916219" ratioLeft="737" ratioRight="194" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="com.tomato.exerd.ui.views.domain" appearance="2" expanded="2">
 <page content="com.tomato.exerd.ui.views.domain" label="도메인"/>
 <page content="com.tomato.exerd.validate.ui.ValidateView" label="검토"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="콘솔"/>
@@ -170,11 +165,9 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" path="/newProject/SFR.exerd"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" path="/newProject/SFR2차.exerd"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" uri="file:/D:/bookShop01/src/main/webapp/WEB-INF/erd/bookshop_erd.exerd"/>
 </editors>
-<item historyLabel="SFR.exerd" index="0"/>
-<item active="true" historyLabel="SFR2차.exerd" index="1"/>
+<item active="true" historyLabel="bookshop_erd.exerd" index="0"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -192,6 +185,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="bookshop_erd.exerd" tooltip="D:\bookShop01\src\main\webapp\WEB-INF\erd\bookshop_erd.exerd">
+<persistable uri="file:/D:/bookShop01/src/main/webapp/WEB-INF/erd/bookshop_erd.exerd"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="SFR2차.exerd" tooltip="newProject/SFR2차.exerd">
 <persistable path="/newProject/SFR2차.exerd"/>
 </file>
