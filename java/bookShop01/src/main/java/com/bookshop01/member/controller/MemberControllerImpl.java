@@ -48,9 +48,6 @@ public class MemberControllerImpl extends BaseController implements MemberContro
 			}else{
 				mav.setViewName("redirect:/main/main.do");	
 			}
-			
-			
-			
 		}else{
 			String message="아이디나  비밀번호가 틀립니다. 다시 로그인해주세요";
 			mav.addObject("message", message);
