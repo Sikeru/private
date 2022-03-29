@@ -1,0 +1,3 @@
+#Banner Setting
+#spring.main.banner-mode = console
+server.port=8090

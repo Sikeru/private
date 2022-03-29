@@ -1,0 +1,2 @@
+#Banner Setting
+spring.main.banner-mode = console
