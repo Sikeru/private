@@ -1,4 +1,0 @@
-#Banner Setting
-spring.main.banner-mode = console
-spring.banner.image.location=banner/duke3.png
-server.port=0

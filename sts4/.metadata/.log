@@ -8608,3 +8608,15 @@ org.eclipse.debug.core.DebugException: Launch configuration myboot03 - Myboot03A
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-03-29 17:12:28.781
 !MESSAGE Launch configuration myboot03 - Myboot03Application at file:/D:/sts4/.metadata/.plugins/org.eclipse.debug.core/.launches/myboot03%20-%20Myboot03Application.launch does not exist.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 17:30:36.868
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.awogNOiM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 17:30:36.868
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.awogNOiM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 17:30:36.869
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 17:30:36.869
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.awogNOiM => OK
