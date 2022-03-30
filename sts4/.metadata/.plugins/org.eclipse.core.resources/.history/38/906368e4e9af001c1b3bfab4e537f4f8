@@ -1,0 +1,9 @@
+server.port=8090
+# 빈 overriding 설정
+spring.main.allow-bean-definition-overriding=true
+
+#데이터소스 : Oracle
+board.jdbc.driverClass=oracle.jdbc.driver.OracleDriver
+board.jdbc.url=jdbc:oracle:thin:@localhost:1521:xe
+board.jdbc.username=JSP
+board.jdbc.password=12345 

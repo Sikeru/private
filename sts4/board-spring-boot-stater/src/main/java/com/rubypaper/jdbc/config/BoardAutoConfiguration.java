@@ -18,11 +18,10 @@ public class BoardAutoConfiguration {
 	@ConditionalOnMissingBean
 	public JDBCConnectionManager getJDBCConnectionManager() {
 		JDBCConnectionManager manager = new JDBCConnectionManager();
-		manager.setDriverClass("oracle.jdbc.driver.OracleDriver");
-		manager.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
-		manager.setUsername("JSP");
-		manager.setPassword("12345");
+		manager.setDriverClass(properties.getDriverClass());
+		manager.setUrl(properties.getUrl());
+		manager.setUsername(properties.getUsername());
+		manager.setPassword(properties.getPassword());
 		return manager;
 	}
-
 } 

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Chapter03ApplicationTests" project="Chapter03" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.rubypaper.Chapter03ApplicationTests" time="0.144" displayname="Chapter03ApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.rubypaper.Chapter03ApplicationTests]">
+    <testcase name="contextLoads" classname="com.rubypaper.Chapter03ApplicationTests" time="0.144" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.rubypaper.Chapter03ApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

@@ -1,3 +1,0 @@
-#Server
-server.port=8090
-server.session.timeout = 360000
