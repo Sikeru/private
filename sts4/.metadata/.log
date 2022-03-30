@@ -9182,3 +9182,15 @@ org.eclipse.core.internal.resources.ResourceException: Marker id 857 not found.
 
 !ENTRY org.eclipse.jdt.junit 4 0 2022-03-30 17:14:50.723
 !MESSAGE No tests found with test runner 'JUnit 5'.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-30 17:18:46.100
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DxkglhZc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-30 17:18:46.101
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.DxkglhZc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-30 17:18:46.101
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-30 17:18:46.101
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DxkglhZc => OK

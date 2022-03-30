@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PropertiesTest1" project="Chapter03" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.rubypaper.PropertiesTest1" time="0.293" displayname="PropertiesTest1" uniqueid="[engine:junit-jupiter]/[class:com.rubypaper.PropertiesTest1]">
-    <testcase name="testMethod" classname="com.rubypaper.PropertiesTest1" time="0.293" displayname="testMethod()" uniqueid="[engine:junit-jupiter]/[class:com.rubypaper.PropertiesTest1]/[method:testMethod()]"/>
-  </testsuite>
-</testrun>

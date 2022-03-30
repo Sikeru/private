@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="Chapter03ApplicationTests" project="Chapter03" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.rubypaper.PropertiesTest" time="0.305">
-    <testcase name="testMethod" classname="com.rubypaper.PropertiesTest" time="0.305"/>
-  </testsuite>
-</testrun>

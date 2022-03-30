@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardControllerTest" project="Chapter03" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.rubypaper.BoardControllerTest" time="0.412">
-    <testcase name="testHello" classname="com.rubypaper.BoardControllerTest" time="0.412"/>
-  </testsuite>
-</testrun>
