@@ -1,7 +1,5 @@
 package com.rubypaper.controller;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +12,7 @@ import com.rubypaper.service.BoardService;
 @RestController
 public class BoardController {
 
-	@Autowired
+	@Autowired 
 	private BoardService boardService;
 	
 	@GetMapping("/hello")
