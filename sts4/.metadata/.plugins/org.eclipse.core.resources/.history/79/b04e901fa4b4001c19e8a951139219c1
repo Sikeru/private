@@ -1,0 +1,5 @@
+package com.rubypaper.service;
+
+public class BoardServiceImpl {
+
+}

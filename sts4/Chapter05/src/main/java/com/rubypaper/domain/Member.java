@@ -51,8 +51,13 @@ public class Member {
 		this.role = role;
 	}
 	
-	@OneToMany(mappedBy="member", fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@OneToMany(mappedBy="member", fetch=FetchType.EAGER)
 	private List<Board> boardList = new ArrayList<Board>();
+
+	public List<Board> getBoardList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }
 

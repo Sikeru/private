@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="org.eclipse.jdt.ui.lastextjar" value="D:\sts-bundle\sts-4-4.14.0.RELEASE-e4.23.0-win32.win32.x86_64.self-extracting\contents\sts-4.14.0.RELEASE"/>
+	<item key="Annotations" value="false"/>
+	<item key="Replace" value="false"/>
+	<item key="Comments" value="false"/>
+	<item key="InstanceOf" value="false"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
