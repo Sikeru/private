@@ -25,7 +25,7 @@ import lombok.Setter;
 @Table(name = "orders") // 정렬할 때 사용하는 키워드 ‘order’가 있기 때문에 엔티티에 매핑되는 테이블로 ‘orders’로 지정
 @Getter
 @Setter
-public class Order {
+public class Order extends BaseEntity {
 	@Id
 	@GeneratedValue
 	@Column(name = "order_id")
@@ -36,8 +36,6 @@ public class Order {
 	private LocalDateTime orderDate; // 주문일
 	@Enumerated(EnumType.STRING)
 	private OrderStatus orderStatus; // 주문상태
-	private LocalDateTime regTime;
-	private LocalDateTime updateTime;
 
 //	@OneToMany(mappedBy = "order")
 //	private List<OrderItem> orderItems = new ArrayList<>();

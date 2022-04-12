@@ -16,7 +16,7 @@ import lombok.Setter;
 @Table(name="cart")
 @Getter
 @Setter
-public class Cart {
+public class Cart extends BaseEntity {
 	@Id
 	@Column(name = "cart_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
