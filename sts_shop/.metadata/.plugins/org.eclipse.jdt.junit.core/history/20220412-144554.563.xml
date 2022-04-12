@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderTest" project="shop" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.shop.entity.OrderTest" time="0.248" displayname="OrderTest" uniqueid="[engine:junit-jupiter]/[class:com.shop.entity.OrderTest]">
+    <testcase name="orphanRemovalTest" classname="com.shop.entity.OrderTest" time="0.248" displayname="고아객체 제거 테스트" uniqueid="[engine:junit-jupiter]/[class:com.shop.entity.OrderTest]/[method:orphanRemovalTest()]"/>
+  </testsuite>
+</testrun>
