@@ -99,4 +99,11 @@ public class ItemController {
 		model.addAttribute("maxPage", 5); // 상품 관리 하단에 보여줄 페이지 번호의 최대 개수이다.
 		return "item/itemMng";
 	}
+	
+	@GetMapping(value = "/item/{itemId}")
+	public String itemDtl(Model model, @PathVariable("itemId") Long itemId){
+	ItemFormDto itemFormDto = itemService.getItemDtl(itemId);
+	model.addAttribute("item", itemFormDto);
+	return "item/itemDtl";
+	}
 }

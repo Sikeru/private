@@ -84,15 +84,13 @@ public class ItemRepositoryCustomImpl implements ItemRepositoryCustom { // 인�
 	public Page<MainItemDto> getMainItemPage(ItemSearchDto itemSearchDto, Pageable pageable) {
 		QItem item = QItem.item;
 		QItemImg itemImg = QItemImg.itemImg;
-		QueryResults<MainItemDto> results = queryFactory.select(new QMainItemDto(item.id, // 엔티티 조회 후 DTO로 변환하는 과정을 줄일 수
-																							// 있다.
-				item.itemNm, item.itemDetail, itemImg.imgUrl, item.price)).from(itemImg).join(itemImg.item, item)
-				.where(itemImg.repimgYn.eq("Y")) // 상품 이미지의 경우 대표 상품 이미지만 불러온다.
+		QueryResults<MainItemDto> results = queryFactory
+				.select(new QMainItemDto(item.id, item.itemNm, item.itemDetail, itemImg.imgUrl, item.price))
+				.from(itemImg).join(itemImg.item, item).where(itemImg.repimgYn.eq("Y"))
 				.where(itemNmLike(itemSearchDto.getSearchQuery())).orderBy(item.id.desc()).offset(pageable.getOffset())
 				.limit(pageable.getPageSize()).fetchResults();
 		List<MainItemDto> content = results.getResults();
 		long total = results.getTotal();
 		return new PageImpl<>(content, pageable, total);
 	}
-
 }
