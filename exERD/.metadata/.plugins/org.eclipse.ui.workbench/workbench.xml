@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="7" version="2.0">
+<workbench progressCount="5" version="2.0">
 <workbenchAdvisor/>
-<window height="768" width="1024" x="-1458" y="-6">
+<window height="768" maximized="true" width="1024" x="60" y="-13">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -24,9 +24,7 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
@@ -41,7 +39,7 @@
 <element path="/newProject"/>
 </expanded>
 <selection>
-<element path="/newProject"/>
+<element path="/newProject/SFR.exerd"/>
 </selection>
 </viewState>
 </view>
@@ -65,7 +63,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.tomato.exerd.editor.DiagramEditor" activePerspective="com.tomato.exerd.perspective.design">
+<perspectives activePart="org.eclipse.ui.views.ResourceNavigator" activePerspective="com.tomato.exerd.perspective.design">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.tomato.exerd.perspective.ExerdPerspectiveFactory" id="com.tomato.exerd.perspective.design" label="eXERD"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -163,12 +161,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" uri="file:/D:/bookShop01/src/main/webapp/WEB-INF/erd/bookshop_erd.exerd"/>
-</editors>
-<item active="true" historyLabel="bookshop_erd.exerd" index="0"/>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -185,14 +178,23 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="bookshop_erd.exerd" tooltip="D:\bookShop01\src\main\webapp\WEB-INF\erd\bookshop_erd.exerd">
-<persistable uri="file:/D:/bookShop01/src/main/webapp/WEB-INF/erd/bookshop_erd.exerd"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="SFR.exerd" tooltip="newProject/SFR.exerd">
+<persistable path="/newProject/SFR.exerd"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="project2.exerd" tooltip="\\Big200\과제\2조\데이터베이스 설계\project2.exerd">
+<persistable uri="file:////Big200/과제/2조/데이터베이스%20설계/project2.exerd"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="first.exerd" tooltip="\\Big200\과제\1조\데이터베이스 설계\first.exerd">
+<persistable uri="file:////Big200/과제/1조/데이터베이스%20설계/first.exerd"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="SFR2차.exerd" tooltip="newProject/SFR2차.exerd">
 <persistable path="/newProject/SFR2차.exerd"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="SFR.exerd" tooltip="newProject/SFR.exerd">
-<persistable path="/newProject/SFR.exerd"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="job.exerd" tooltip="newProject/job.exerd">
+<persistable path="/newProject/job.exerd"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="bookshop_erd.exerd" tooltip="D:\bookShop01\src\main\webapp\WEB-INF\erd\bookshop_erd.exerd">
+<persistable uri="file:/D:/bookShop01/src/main/webapp/WEB-INF/erd/bookshop_erd.exerd"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="dbdbdb.exerd" tooltip="D:\project_ex\착수자료\6. DB설계\exErd\dbdbdb.exerd">
 <persistable uri="file:/D:/project_ex/착수자료/6.%20DB설계/exErd/dbdbdb.exerd"/>
