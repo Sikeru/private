@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<es:ExerdSearchRequest xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:es="http://exerd.com/search">
+  <commonRequest>
+    <logicalNameRule use="true" expression="&#xc0ac;&#xc5c5;"/>
+    <physicalNameRule expression=""/>
+    <commentRule expression=""/>
+  </commonRequest>
+  <tableRequest/>
+  <columnRequest>
+    <columnTypeRule use="true"/>
+    <domainRule/>
+    <dataTypeRule/>
+    <nullRule/>
+    <defaultValueRule/>
+  </columnRequest>
+  <indexRequest/>
+  <constraintRequest/>
+  <viewRequest/>
+  <triggerRequest/>
+  <functionRequest/>
+  <procedureRequest/>
+  <scopeRequest>
+    <notUsedRule use="true"/>
+    <schemaRule/>
+    <diagramRule/>
+    <businessAreaRule/>
+  </scopeRequest>
+</es:ExerdSearchRequest>

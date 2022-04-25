@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="16" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="60" y="-13">
+<window height="768" maximized="true" width="1024" x="-1546" y="-19">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -16,7 +16,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="114" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -27,17 +27,12 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.ui.DefaultTextEditor" name=".project" partName=".project" path="D:/exERD/newProject/.project" title=".project" tooltip="newProject/.project" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/newProject/.project"/>
-<editorState selectionLength="0" selectionOffset="135"/>
-</editor>
-<editor activePart="true" focus="true" id="com.tomato.exerd.editor.DiagramEditor" name="job.exerd" partName="job.exerd" title="job.exerd" tooltip="D:\project\job.exerd" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/D:/project/job.exerd"/>
+<editor activePart="true" focus="true" id="com.tomato.exerd.editor.DiagramEditor" name="job0.5.exerd" partName="job0.5.exerd" title="job0.5.exerd" tooltip="D:\JOBJAVA\project\ERD\job0.5.exerd" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/D:/JOBJAVA/project/ERD/job0.5.exerd"/>
 </editor>
 </editors>
 <views>
@@ -70,6 +65,12 @@
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="아웃라인"/>
+<view id="org.eclipse.search.ui.views.SearchView" partName="검색">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="com.tomato.exerd.core.searchpage" org.eclipse.search.lastActivation="1"/>
+</viewState>
+</view>
 <view id="org.eclipse.gef.ui.palette_view" partName="Palette">
 <viewState/>
 </view>
@@ -105,6 +106,7 @@
 <view id="com.tomato.exerd.ui.views.thumbnail"/>
 <view id="com.tomato.exerd.modelview3.ModelView3"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="com.tomato.exerd.ui.views.domain"/>
 <view id="com.tomato.exerd.validate.ui.ValidateView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
@@ -140,13 +142,15 @@
 <folder activePageID="com.tomato.exerd.modelview3.ModelView3" appearance="2" expanded="2">
 <page content="com.tomato.exerd.modelview3.ModelView3" label="모델"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="아웃라인"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="검색"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomFolder" ratio="0.7916219" ratioLeft="737" ratioRight="194" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottomFolder" ratio="0.9688507" ratioLeft="902" ratioRight="29" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.tomato.exerd.ui.views.domain" appearance="2" expanded="2">
 <page content="com.tomato.exerd.ui.views.domain" label="도메인"/>
 <page content="com.tomato.exerd.validate.ui.ValidateView" label="검토"/>
@@ -176,11 +180,22 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/newProject/.project"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" uri="file:/D:/project/job.exerd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/newProject/.project"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" uri="file:/D:/JOBJAVA/project/ERD/job0.3.exerd"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" uri="file:/D:/JOBJAVA/project/ERD/job0.5.exerd"/>
 </editors>
 <item historyLabel=".project" index="0">
 <position/>
 </item>
-<item active="true" historyLabel="job.exerd" index="1"/>
+<item historyLabel="job.exerd" index="1"/>
+<item historyLabel=".project" index="2">
+<position info="not_deleted" x="135" y="0"/>
+</item>
+<item historyLabel="job0.3.exerd" index="3"/>
+<item historyLabel=".project" index="2">
+<position info="not_deleted" x="135" y="0"/>
+</item>
+<item active="true" historyLabel="job0.5.exerd" index="4"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -198,6 +213,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="job0.5.exerd" tooltip="D:\JOBJAVA\project\ERD\job0.5.exerd">
+<persistable uri="file:/D:/JOBJAVA/project/ERD/job0.5.exerd"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="job0.3.exerd" tooltip="D:\JOBJAVA\project\ERD\job0.3.exerd">
+<persistable uri="file:/D:/JOBJAVA/project/ERD/job0.3.exerd"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="job.exerd" tooltip="D:\project\job.exerd">
 <persistable uri="file:/D:/project/job.exerd"/>
 </file>
